@@ -1,9 +1,9 @@
-
 from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework.response import Response
 from controle.models import Tarefas
 from controle.serializers.tarefasSerializer import TarefasSerializer
+from django.http import Http404
 
 class TarefaRetrieveUpdateDeleteView(APIView):
     serializer_class = TarefasSerializer

@@ -1,17 +1,17 @@
-
-
-from rest_framework import generics
-from rest_framework import status
+from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from controle.models.aluno import Aluno
 from controle.serializers.alunoSerializer import AlunoSerializer
 
-class AlunoListCreateView(generics.ListCreateAPIView):
-    queryset = Aluno.objects.all()
-    serializer_class = AlunoSerializer
+class AlunoListCreateView(APIView):
+    def get(self, request):
+        alunos = Aluno.objects.all()
+        serializer = AlunoSerializer(alunos, many=True)
+        return Response(serializer.data)
 
-    def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
+    def post(self, request):
+        serializer = AlunoSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
