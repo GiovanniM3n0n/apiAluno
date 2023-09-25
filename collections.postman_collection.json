@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "b80c0be0-1162-4de0-9eec-a072d9af2aea",
+		"_postman_id": "80955a3c-df3f-44ae-aea8-5ac65a774e7d",
 		"name": "collections",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29994996"
+		"_exporter_id": "29465137",
+		"_collection_link": "https://red-crescent-363252.postman.co/workspace/pinto~3907f6a5-9fd2-4b39-a5d1-558e6f8184f0/collection/29465137-80955a3c-df3f-44ae-aea8-5ac65a774e7d?action=share&source=collection_link&creator=29465137"
 	},
 	"item": [
 		{
@@ -34,7 +35,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/aluno/5/",
+					"raw": "http://127.0.0.1:8000/api/aluno/9/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -46,7 +47,7 @@
 					"path": [
 						"api",
 						"aluno",
-						"5",
+						"9",
 						""
 					]
 				}
@@ -68,7 +69,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/aluno",
+					"raw": "http://127.0.0.1:8000/aluno/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -78,7 +79,8 @@
 					],
 					"port": "8000",
 					"path": [
-						"aluno"
+						"aluno",
+						""
 					]
 				}
 			},
@@ -99,7 +101,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/ap",
+					"raw": "http://127.0.0.1:8000/api/aluno/9/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -109,7 +111,10 @@
 					],
 					"port": "8000",
 					"path": [
-						"ap"
+						"api",
+						"aluno",
+						"9",
+						""
 					]
 				}
 			},
